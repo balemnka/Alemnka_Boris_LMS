@@ -1,10 +1,15 @@
+// Name: Boris Alemnka       Course: Software Development 1 (CEN 3024C)       Date: 6/11/2024
+//Class Name: Book
+//Function: Holds the book object from where our book title, author, setters and getters methods will be stored
+// as well as the return method defined and initialized by data type.
+
+
 import java.util.ArrayList;
-import java.util.HashMap;
 
 class LibraryBooks {
     private static ArrayList<Book> book1;
 
-    public LibraryBooks() {  //Contructors
+    public LibraryBooks() {         //Constructor
         book1 = new ArrayList<>();
     }
 
@@ -45,37 +50,3 @@ class LibraryBooks {
         }
     }
 }
-
-
-
-//class LibraryBooks {
-//    private final Map<String, Book> libraryBooks = new HashMap<>();
-//
-//    private void addNewBook(Book book1) {
-//        libraryBooks.put(book1.getTitle(), book1);
-//    }
-//    public void removeBookTitle(String title) {
-//        libraryBooks.values().removeIf(book1 -> book1.getTitle().equals(title));
-//    }
-//    public void removeBookBarcode(String barcode) {
-//        libraryBooks.remove(barcode);
-//    }
-//    public void checkOut(String title) {
-//        libraryBooks.values().forEach(book1 -> {
-//            if (book1.getTitle().equals(title)) {
-//                book1.setUnavailable(true);
-//            }
-//        });
-//    }
-//    public void checkIn(String title) {
-//        libraryBooks.values().forEach(book1 -> {
-//            if (book1.getTitle().equals(title)) {
-//                book1.setUnavailable(false);
-//            }
-//        });
-//    }
-//    public void printLibraryDatabase() {
-//        System.out.println("Printing Library Collection Database:");
-//        libraryBooks.values().forEach(System.out:: println);
-//        }
-//    }
